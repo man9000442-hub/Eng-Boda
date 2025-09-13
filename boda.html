@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boda Tarek | Portfolio</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<style>
+    html { scroll-behavior: smooth; }
+    .fade-scroll { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+    .fade-scroll.show { opacity: 1; transform: translateY(0); }
+</style>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+<!-- Navbar -->
+<nav class="fixed w-full z-50 bg-white/30 backdrop-blur-md shadow-md transition-all">
+  <div class="container mx-auto flex justify-between items-center p-4">
+    <div class="flex items-center space-x-2">
+  <img src="logo.jpg" alt="Logo" class="w-10 h-10 object-contain">
+  <span class="text-2xl font-bold">Boda Tarek</span>
+    </div>
+    <div class="space-x-4 text-lg">
+      <a href="#home" class="hover:text-blue-500 transition">الرئيسية</a>
+      <a href="#about" class="hover:text-blue-500 transition">عنّي</a>
+      <a href="#projects" class="hover:text-blue-500 transition">مشاريعي</a>
+      <a href="#services" class="hover:text-blue-500 transition">خدماتي</a>
+      
+      <a href="#contact" class="hover:text-blue-500 transition">تواصل</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Home -->
+<section id="home" class="h-screen flex flex-col justify-center items-center text-white bg-gradient-to-br from-blue-500 to-purple-600">
+  <!-- ضع فوق h1 -->
+  <img src="logo.jpg" alt="Logo" class="w-24 h-24 mb-4 animate__animated animate__zoomIn">
+  <h1 class="text-6xl font-extrabold mb-4 animate__animated animate__fadeInDown">مرحباً، أنا Boda Tarek</h1>
+  <p class="text-2xl mb-6 animate__animated animate__fadeInUp animate__delay-1s">مبرمج ومطور ويب | مطور تطبيقات</p>
+  <a href="#projects" class="px-8 py-3 bg-white text-blue-600 font-semibold rounded-full hover:bg-gray-100 transition animate__animated animate__zoomIn animate__delay-2s">شوف مشاريعي</a>
+</section>
+
+<!-- About -->
+<section id="about" class="py-28 px-4 bg-gray-100">
+  <h2 class="text-4xl font-bold text-center mb-10 fade-scroll">عنّي</h2>
+  <p class="max-w-3xl mx-auto text-center text-lg fade-scroll">
+    ،  " كموظف والان بدات العمل الحر  HTML, CSS, JS وPython... مطور ويب بخبرة  عامين  في "
+  </p>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="py-28 px-4 bg-gradient-to-tr from-purple-50 to-purple-100">
+  <h2 class="text-4xl font-bold text-center mb-10 fade-scroll">مشاريعي</h2>
+  <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Project Card -->
+    <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transform hover:-translate-y-3 transition fade-scroll">
+      <h3 class="text-2xl font-bold mb-2">MR-samer website </h3>
+      <p class="mb-4">جدول مواعيد,اماكن تواجده , معلومات عنه + تواصل  .</p>
+      <p class="mb-4"> HTml,Css,Js:باستخدام </p>
+
+      <a href="#" class="text-blue-600 hover:underline"> https://man9000442-hub.github.io/EL-Sa7er/</a>
+    </div>
+
+    <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transform hover:-translate-y-3 transition fade-scroll">
+      <h3 class="text-2xl font-bold mb-2">Mr-Ahmed Abdullah website</h3>
+      <p class="mb-4">جدول مواعيد,اماكن تواجده , معلومات عنه + تواصل </p>
+      <p class="mb-4"> HTml,Css,Js:باستخدام</p>
+      <a href="#" class="text-blue-600 hover:underline">https://ahmed-abdulllah.netlify.app/</a>
+    </div>
+
+    <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transform hover:-translate-y-3 transition fade-scroll">
+      <h3 class="text-2xl font-bold mb-2">Ping pong Game</h3>
+      <p class="mb-4">لعبه بينج بونج التقليديه</p>
+      <p class="mb-4">By Using: python</p>
+      
+    </div>
+
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="py-28 px-4 bg-gray-100">
+  <h2 class="text-4xl font-bold text-center mb-10 fade-scroll">خدماتي</h2>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transform hover:scale-105 transition fade-scroll text-center">
+      <h3 class="text-2xl font-bold mb-2">تطوير ويب</h3>
+      <p>إنشاء مواقع ويب تفاعلية وسريعة الاستجابة باستخدام HTML, CSS, JS.</p>
+    </div>
+    <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transform hover:scale-105 transition fade-scroll text-center">
+      <h3 class="text-2xl font-bold mb-2">تطوير تطبيقات</h3>
+      <p>برمجة تطبيقات سطح المكتب أو الهواتف باستخدام Python وFlutter.</p>
+    </div>
+    <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transform hover:scale-105 transition fade-scroll text-center">
+      <h3 class="text-2xl font-bold mb-2">خدمات أخرى</h3>
+      <p>Offiice,سكريبتات، أتمتة مهام، صيانة مشاريع، ونصائح تقنية,تفعيل ويندوز10</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact -->
+<!-- Contact Section -->
+<section id="contact" class="py-28 px-4 bg-gray-100 text-center">
+  <h2 class="text-4xl font-bold mb-10 fade-scroll">تواصل معي</h2>
+  <a 
+     href="https://wa.me/201094724932?text=مرحبا%20Boda%20Tarek%2C%20أود%20التواصل%20معك" 
+     target="_blank" 
+     class="px-8 py-3 bg-green-500 text-white rounded-full hover:bg-green-600 transition fade-scroll inline-block"
+  >
+    أرسل لي على واتساب
+  </a>
+</section>
+
+
+<!-- Footer -->
+<footer class="bg-white py-6 text-center">
+  <p>© 2025 Boda Tarek. جميع الحقوق محفوظة.</p>
+</footer>
+
+<!-- JS: Scroll Animation -->
+<script>
+const scrollElements = document.querySelectorAll(".fade-scroll");
+const elementInView = (el, offset = 0) => {
+  const elementTop = el.getBoundingClientRect().top;
+  return elementTop <= ((window.innerHeight || document.documentElement.clientHeight) - offset);
+};
+const displayScrollElement = (element) => element.classList.add("show");
+const hideScrollElement = (element) => element.classList.remove("show");
+
+const handleScrollAnimation = () => {
+  scrollElements.forEach(el => {
+    if(elementInView(el, 100)) displayScrollElement(el);
+    else hideScrollElement(el);
+  });
+};
+
+window.addEventListener("scroll", () => { handleScrollAnimation(); });
+window.addEventListener("load", () => { handleScrollAnimation(); });
+</script>
+
+</body>
+</html>
